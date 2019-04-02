@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+  text-align: center;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  border-top: none;
+  text-align: center;
+}
+.auto-style1 {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+
+<h2 class="auto-style1">SERNN: Speech Enhancement Recurrent Neural Network</h2>
+<p class="auto-style1">Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, '2.5dB')">2.5dB</button>
+  <button class="tablinks" onclick="openCity(event, '7.5dB')">7.5dB</button>
+  <button class="tablinks" onclick="openCity(event, '12.5dB')">12.5dB</button>
+  <button class="tablinks" onclick="openCity(event, '17.5dB')">17.5dB</button>
+</div>
+
+<div id="2.5dB" class="tabcontent">
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style1">Sample Name </td>
+		<td class="auto-style1">Noisy</td>
+		<td class="auto-style1">Clean</td>
+		<td class="auto-style1">SERNN</td>
+	</tr>
+	<tr>
+		<td class="auto-style1">232_052</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p232_052.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p232_052.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p232_052.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">232_170</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p232_170.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p232_170.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p232_170.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">257_054</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p257_054.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p257_054.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p257_054.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">257_070</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p257_070.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p257_070.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p257_070.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">257_143</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p257_143.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p257_143.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p257_143.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+</table>
+  
+</div>
+
+<div id="7.5dB" class="tabcontent">
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style1">Sample Name </td>
+		<td class="auto-style1">Noisy</td>
+		<td class="auto-style1">Clean</td>
+		<td class="auto-style1">SERNN</td>
+	</tr>
+	<tr>
+		<td class="auto-style1">232_013</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p232_013.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p232_013.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p232_013.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">232_095</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p232_095.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p232_095.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p232_095.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">232_103</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p232_103.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p232_103.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p232_103.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">257_081</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p257_081.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p257_081.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p257_081.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">257_154</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p257_154.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p257_154.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p257_154.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+</table>
+</div>
+
+
+<div id="12.5dB" class="tabcontent">
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style1">Sample Name </td>
+		<td class="auto-style1">Noisy</td>
+		<td class="auto-style1">Clean</td>
+		<td class="auto-style1">SERNN</td>
+	</tr>
+	<tr>
+		<td class="auto-style1">232_066</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p232_066.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p232_066.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p232_066.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">232_030</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p232_030.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p232_030.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p232_030.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">257_289</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p257_289.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p257_289.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p257_289.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">257_329</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p257_329.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p257_329.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p257_329.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">257_432</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p257_432.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p257_432.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p257_432.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+</table>
+</div>
+
+<div id="17.5dB" class="tabcontent">
+<table style="width: 100%">
+	<tr>
+		<td class="auto-style1">Sample Name </td>
+		<td class="auto-style1">Noisy</td>
+		<td class="auto-style1">Clean</td>
+		<td class="auto-style1">SERNN</td>
+	</tr>
+	<tr>
+		<td class="auto-style1">257_127</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p257_127.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p257_127.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p257_127.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">232_041</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p232_041.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p232_041.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p232_041.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">257_140</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p257_140.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p257_140.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p257_140.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">232_029</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p232/029.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p232/029.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p232/029.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+	<tr>
+		<td class="auto-style1">257_252</td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/noisy/p257_252.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/clean/p257_252.wav" type="audio/mpeg">
+</audio></td>
+		<td class="auto-style1"><audio controls>
+  <source src="samples/enh/p257_252.wav" type="audio/mpeg">
+</audio></td>
+	</tr>
+</table>
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+<p class="auto-style1">&nbsp;</p>
+   
+</body>
+</html> 
